@@ -1,0 +1,21 @@
+.movie {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        video {
+            flex: 1 0 20%;
+            max-width: 550px;
+            background: $black1;
+            margin: 5px;
+            color: $white2;
+            border-radius: 20px;
+            padding: 20px;
+            height: 300px;
+
+            @media screen and (max-width: 580px) {
+                width: 300px;
+            }
+        }
+    }
+}

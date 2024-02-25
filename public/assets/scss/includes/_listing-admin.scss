@@ -1,0 +1,101 @@
+.listing-file {
+    h1 {
+        text-align: center;
+        font-family: $font2;
+        color: $white1;
+        font-size: 2.5rem;
+        margin: 10px 20px;
+        text-transform: uppercase;
+    }
+    .alert-success {
+        background: $green1;
+        padding: 10px 0;
+        width: 30%;
+        color: $white1;
+    }
+    .form {
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+            rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        width: 70%;
+        margin: 0 auto;
+
+        form {
+            padding: 30px;
+
+            .error {
+                color: $red1;
+            }
+
+            input[type="text"] {
+                width: 30%;
+                height: 40px;
+                background: $black2;
+                color: $white1;
+                margin-bottom: 10px;
+            }
+            input[type="text"]::placeholder {
+                color: $white1;
+            }
+            input {
+                display: block;
+                transition: 0.3s;
+                cursor: pointer;
+            }
+            input[type="file"]::file-selector-button {
+                height: 40px;
+                border-radius: 8px;
+                background: $black2;
+                border: 1px solid $black2;
+                color: $white1;
+            }
+            input[type="file"]::file-selector-button:hover {
+                background: $white1;
+                color: $black2;
+            }
+            button {
+                padding: 10px;
+                background: $melon;
+                cursor: pointer;
+                margin-top: 10px;
+                border: none;
+                color: $black1;
+            }
+        }
+    }
+    .table {
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+            rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        width: 70%;
+        margin: 20px auto;
+        background: $black2;
+        padding: 20px;
+
+        table {
+            border: 1px solid $white2;
+            width: 100%;
+
+            th {
+                padding: 10px 20px;
+            }
+            td {
+                padding: 10px 20px;
+            }
+        }
+    }
+    .delete-img {
+        button {
+            background: $red1;
+            color: $white2;
+            padding: 5px;
+            border: 1px solid $red1;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                background: $white2;
+                color: $red1;
+            }
+        }
+    }
+}

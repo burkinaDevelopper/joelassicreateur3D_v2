@@ -1,0 +1,74 @@
+body {
+    background: $black1;
+}
+.nav-bar-admin {
+    border-bottom: 1px solid $white2;
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 50px;
+
+        li {
+            margin: 0px 10px;
+        }
+        a,
+        a:visited {
+            color: $white1;
+            font-family: $font2;
+            position: relative;
+
+            &:hover::after {
+                content: "Aller sur le site internet";
+                position: absolute;
+                color: $green1;
+                left: 0;
+                top: 90%;
+                font-size: 0.8rem;
+            }
+        }
+
+        button {
+            background: $red1;
+            border: 1px solid $red1;
+            border-radius: 5px;
+            padding: 8px;
+            color: $white1;
+            cursor: pointer;
+        }
+    }
+}
+.page-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+
+    .side-bar {
+        background: $black2;
+        border: 1px solid $black2;
+        border-radius: 5px;
+        height: 100vh;
+
+        ul {
+            margin-left: 15px;
+
+            li {
+                border-bottom: 1px solid $black1;
+                margin: 20px 0;
+            }
+
+            a {
+                color: $white1;
+                font-family: $font1;
+                cursor: pointer;
+                padding-bottom: 20px;
+                display: block;
+                transition: 0.3s;
+
+                &:hover {
+                    font-size: 1.1rem;
+                    color: $black1;
+                }
+            }
+        }
+    }
+}

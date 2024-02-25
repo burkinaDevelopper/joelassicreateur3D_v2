@@ -1,0 +1,42 @@
+.listing {
+    background: $black2;
+    div {
+        margin: 50px 40px;
+    }
+    h1 {
+        font-family: $font2;
+        color: $white1;
+        font-size: 2rem;
+        padding: 20px 0;
+        letter-spacing: 2px;
+
+        @media screen and (max-width: 680px) {
+            font-size: 1.5rem;
+        }
+    }
+    section {
+        margin: 20px 0;
+        padding-bottom: 30px;
+    }
+    h3 {
+        color: $white1;
+        margin: 10px 0;
+        font-size: 1.5rem;
+        font-family: $font1;
+        letter-spacing: 2px;
+
+        @media screen and (max-width: 680px) {
+            font-size: 1.1rem;
+        }
+    }
+    li {
+        color: $white1;
+        list-style: none;
+        margin: 10px 0;
+        letter-spacing: 1px;
+
+        @media screen and (max-width: 680px) {
+            font-size: 0.9rem;
+        }
+    }
+}

@@ -1,0 +1,192 @@
+.accueil {
+    background: $black1;
+    div {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .carousel {
+        height: 80vh;
+        width: 100vw;
+        position: relative;
+    }
+    .carousel button {
+        position: absolute;
+        background: none;
+        border: none;
+        outline: none;
+        font-size: 2.6rem;
+        z-index: 2;
+        cursor: pointer;
+        color: rgb(243, 241, 241);
+        transform: translateY(-50%);
+        top: 50%;
+    }
+    #prev {
+        left: 5px;
+
+        @media screen and (max-width: 680px) {
+            font-size: 1.4rem;
+        }
+    }
+    #next {
+        right: 5px;
+
+        @media screen and (max-width: 680px) {
+            font-size: 1.4rem;
+        }
+    }
+    .carousel li {
+        list-style: none;
+    }
+    .slide {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 0.4s ease-in-out;
+
+        h1 {
+            position: absolute;
+            z-index: 1;
+            color: $white1;
+            font-family: $font2;
+            font-size: 4rem;
+            top: 10%;
+            padding-left: 20px;
+
+            @media screen and (max-width: 680px) {
+                font-size: 2.5rem;
+            }
+        }
+    }
+    .slide.active {
+        opacity: 1;
+    }
+    .slide img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .avis {
+        background: $black2;
+        padding: 20px 0;
+
+        h2 {
+            text-align: center;
+            color: $white1;
+            margin: 20px 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            @media screen and (max-width: 572px) {
+                display: block;
+            }
+        }
+        .text {
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+                rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+            padding: 20px 20px 30px;
+            position: relative;
+
+            span {
+                color: $white2;
+            }
+            h3 {
+                margin: 15px 0;
+                color: $white1;
+                font-size: 1.5rem;
+            }
+            p {
+                color: $white1;
+                line-height: 30px;
+                margin: 45px 0;
+            }
+            strong {
+                position: absolute;
+                bottom: 0;
+                color: $melon;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .contact-infos {
+        max-width: 1100px;
+        margin: 70px auto 3px;
+        padding: 10px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+
+        .alert-admin {
+            position: absolute;
+            top: 15px;
+            left: 5%;
+            color: $green1;
+            font-size: 1.5rem;
+        }
+
+        @media screen and (max-width: 680px) {
+            display: block;
+        }
+
+        form {
+            padding: 30px;
+            display: grid;
+            border: 1px solid $black2;
+            background: $black2;
+            transition: 0.3s;
+
+            &:hover {
+                background: $white2;
+            }
+
+            div {
+                width: 100%;
+                margin: 20px 0;
+            }
+            .name input,
+            .email input {
+                width: 100%;
+                height: 35px;
+                background: $black1;
+            }
+            textarea {
+                width: 100%;
+                height: 85px;
+                background: $black1;
+            }
+            ::placeholder {
+                color: $white1;
+                padding-left: 15px;
+                font-family: $font1;
+            }
+
+            button {
+                padding: 10px;
+                background: $melon;
+                cursor: pointer;
+                border: 1px solid $black2;
+            }
+        }
+        .description {
+            h3 {
+                color: $white1;
+                font-family: $font2;
+                font-size: 2rem;
+                letter-spacing: 3px;
+                margin: 10px auto 35px;
+            }
+            p {
+                letter-spacing: 3px;
+                color: $white2;
+                line-height: 30px;
+                font-family: $font1;
+            }
+        }
+    }
+}

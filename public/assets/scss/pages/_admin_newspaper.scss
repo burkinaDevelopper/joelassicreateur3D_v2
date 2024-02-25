@@ -1,0 +1,71 @@
+.newspaper-admin {
+    h1 {
+        text-align: center;
+        color: $white1;
+        margin: 10px 0;
+    }
+    .form {
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+            rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        width: 70%;
+        margin: 0 auto;
+
+        .alert {
+            text-align: center;
+            color: $green1;
+            font-size: 1.5rem;
+            margin: 12px 0 10px;
+            padding-top: 20px;
+        }
+
+        form {
+            div {
+                display: flex;
+                flex-direction: column;
+            }
+            label {
+                color: $white1;
+                margin: 10px 0;
+            }
+            input {
+                height: 30px;
+            }
+            button {
+                background: $green1;
+                padding: 10px 20px;
+                cursor: pointer;
+                margin-bottom: 30px;
+                transition: 0.3s;
+
+                &:hover {
+                    background: $red1;
+                }
+            }
+        }
+    }
+    .table {
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+            rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        width: 70%;
+        margin: 20px auto;
+        background: $black2;
+        padding: 20px;
+
+        table {
+            border: 1px solid $white2;
+            width: 100%;
+
+            th {
+                padding: 10px 20px;
+                color: $melon;
+                font-family: $font2;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+            td {
+                padding: 10px 20px;
+                color: $white1;
+            }
+        }
+    }
+}
