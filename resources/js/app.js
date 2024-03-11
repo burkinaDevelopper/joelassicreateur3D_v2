@@ -3,7 +3,7 @@ import "./bootstrap";
 import Alpine from "alpinejs";
 import "./main";
 import "./carousel";
-import "./galerie-joeal";
+import "./galerie-listing";
 
 window.Alpine = Alpine;
 
